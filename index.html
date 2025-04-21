@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./images/png/SnaptureBrandLogo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snapture</title>
+    
+    <!-- Script para manejar redirecciones en GitHub Pages con SPA -->
+    <script type="text/javascript">
+      // Solución para rutas de SPA en GitHub Pages
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    <script type="module" crossorigin src="/snapture-web/assets/index-C_i5QwST.js"></script>
+    <link rel="stylesheet" crossorigin href="/snapture-web/assets/index-CvXVHnEq.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://kit.fontawesome.com/4706d6df24.js" crossorigin="anonymous"></script>
+  </body>
+</html>
